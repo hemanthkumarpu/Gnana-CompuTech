@@ -7,7 +7,7 @@ import logo from '../assets/logo.png'
 // ScrollToHash handles the actual scrolling on route/hash change.
 const NAV_LINKS = [
   { href: '/#home', label: 'Home' },
-  { href: '/#about', label: 'About' },
+  { href: '/about-us', label: 'About Us' },
   { href: '/#courses', label: 'Courses' },
   { href: '/#services', label: 'Services' },
   { href: '/#testimonials', label: 'Testimonials' },

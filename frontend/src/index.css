@@ -184,6 +184,53 @@ section.alt{background:var(--paper-dim); border-top:1px solid var(--line); borde
 .section-head p{font-size:16px; color:var(--slate); max-width:56ch;}
 
 /* ---------- ABOUT ---------- */
+.about-page .wrap{padding-bottom:72px;}
+.about-hero{
+  display:grid; grid-template-columns:1.1fr 0.9fr; gap:24px;
+  margin-bottom:28px; align-items:stretch;
+}
+.about-hero-content{
+  background:var(--card); border:1px solid var(--line);
+  border-radius:var(--radius); padding:40px;
+}
+.about-hero-content h2{
+  font-size:clamp(28px, 3vw, 40px); margin-bottom:16px;
+  line-height:1.08; max-width:12ch;
+}
+.about-hero-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:24px;}
+.about-hero-card{
+  background:linear-gradient(135deg, var(--ink), var(--teal));
+  color:var(--paper); border-radius:var(--radius); padding:40px;
+  box-shadow:0 16px 40px rgba(16,35,61,0.16);
+}
+.about-pill{
+  display:inline-block; margin-bottom:16px; font-family:var(--mono);
+  font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--amber);
+}
+.about-hero-card h3{
+  font-family:var(--serif); font-size:24px; line-height:1.2; color:#fff;
+  margin:0 0 18px;
+}
+.about-hero-card ul{display:grid; gap:10px; padding:0; margin:0; list-style:none;}
+.about-hero-card li{position:relative; padding-left:18px; color:#DDE7E4;}
+.about-hero-card li::before{content:"→"; position:absolute; left:0; color:var(--amber);}
+
+.about-story-grid{display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:24px; margin-bottom:24px;}
+.about-story-card ul li{padding:8px 0; border-top:1px dashed var(--line-soft);}
+.about-story-card ul li:first-child{border-top:none;}
+.about-feature-strip{display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:20px; margin-bottom:34px;}
+.about-photo-wrap{display:flex; flex-direction:column; gap:12px;}
+.about-photo{position:relative; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); box-shadow:0 12px 30px rgba(16,35,61,.08); width:100%; max-width:100%;}
+.about-photo img{filter:grayscale(15%) contrast(1.03); display:block; width:100%; height:auto; object-fit:contain; object-position:center;}
+.about-photo::after{content:""; position:absolute; inset:0; border:1px solid rgba(255,255,255,.25); pointer-events:none;}
+.about-value-stack{
+  background:var(--paper-dim); border:1px solid var(--line);
+  border-radius:var(--radius); padding:28px;
+}
+.about-value-title{
+  font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--teal); margin-bottom:16px; font-weight:600;
+}
 .about-cols{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-bottom:56px;}
 .ledger-card{
   background:var(--card); border:1px solid var(--line);

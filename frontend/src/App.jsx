@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx'
 import BackToTop from './components/BackToTop.jsx'
 import ScrollToHash from './components/ScrollToHash.jsx'
 import Home from './pages/Home.jsx'
+import AboutUs from './pages/AboutUs.jsx'
 import CourseDetail from './pages/CourseDetail.jsx'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/courses/:slug" element={<CourseDetail />} />
       </Routes>
       <Footer />
